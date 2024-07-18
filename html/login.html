@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../refrence/Images/fbLogo.png">
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="../refrence/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="../refrence/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery file -->
+    <script type="text/javascript" src="../refrence/JQuery/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+        <div class="content d-flex flex-lg-row flex-column align-items-center justify-content-evenly">
+            <div class="text-center">
+                <div class="fb-info pb-lg-5 mb-5 w-100">
+                    <div class="image"><img src="../refrence/Images/facebook.svg" alt=""
+                            style="width: 210px;height: 70px;"></div>
+                    <div class="Text fs-3 ps-5 pe-5">
+                        Facebook helps you connect and share with the people in your life.
+                    </div>
+                </div>
+            </div>
+
+            <!-- ! Login -->
+            <div class="text-center ms-5 me-5">
+                <div class="login-signup p-3 mb-3">
+                    <div class="log-in text-center border-bottom border-dark-subtle mb-4">
+                        <form action="" class="mb-4" id="login-form">
+                            <input type="text" class="form-control login-email-inp" id="validationServer01" placeholder="Email address or phone number" required>
+                            <div class="valid-feedback feedbackEmail-valid">
+                                your email is valid.
+                            </div>
+                            <div class="invalid-feedback feedbackEmail-invalid">
+                                your email is invalid!
+                            </div>
+                            <input type="password" class="form-control login-pass-inp" id="validationServer01" placeholder="Password" required>
+                            <div class="valid-feedback feedbackPssword-valid">
+                                your password is valid.
+                            </div>
+                            <div class="invalid-feedback feedbackPssword-invalid">
+                                your password is invalid!
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary fw-bold fs-5 mb-3" type="submit">Log in</button>
+                            </div>
+                            <a href="##">Forgotten password?</a>
+                        </form>
+                    </div>
+                    <div class="sign-up d-flex justify-content-center mb-3">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Create new account</button>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <a href="##" class="fw-bold">Create a Page </a><span>for a celebrity, brand or business.</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ! Sign Up -->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header pb-0">
+                    <div>
+                        <h3 class="modal-title">Sign Up</h3>
+                        <p>It's quick and easy.</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" id="myForm">
+                        <div class="inp-value">
+                            <div class="d-flex">
+                                <input type="text" class="form-control w-50 mb-3 me-2" id="validationServer01" placeholder="First name" name="First name" required>
+                                <input type="text" class="form-control w-50 mb-3" id="validationServer01" placeholder="Surname" name="Surname" required>
+                            </div>
+                            <input type="text" class="form-control mb-3" id="validationServer01" placeholder="Mobile number or email address" name="email" required>
+                            <input type="password" class="form-control mb-3" id="validationServer01" placeholder="New password" name="password" required>
+                        </div>
+                        <div class="birth-info">
+                            <div style="font-size: 12px;">Date of birth</div>
+                            <div class="d-flex justify-content-between">
+                                <select name="birth-day" id="" class="form-select form-select-sm w-25" aria-label="Small select example" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="33">33</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select name="birth-month" id="" class="form-select form-select-sm w-25" aria-label="Small select example" required>
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">Mar</option>
+                                    <option value="4">Apr</option>
+                                    <option value="5">May</option>
+                                    <option value="6">Jun</option>
+                                    <option value="7">Jul</option>
+                                    <option value="8">Aug</option>
+                                    <option value="9">Sep</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                                <select name="birth-year" id="" class="form-select form-select-sm w-25" aria-label="Small select example" required>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="gender-info mt-3 mb-3">
+                            <div style="font-size: 12px;">Gender</div>
+                            <div class="d-flex justify-content-around">
+                                <div class="Male-gender w-50 me-5 d-flex justify-content-between">
+                                    <label for="inp-male">Male</label>
+                                    <input type="radio" value="Male" id="inp-male" name="Gender" required>
+                                </div>
+                                <div class="Female-gender w-50 d-flex justify-content-between">
+                                    <label for="inp-female">Female</label>
+                                    <input type="radio" value="Female" id="inp-female" name="Gender" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p>People who use our service may have uploaded your contact information to Facebook. <a href="##">Learn more</a>.</p>
+                            <p class="mb-4">By clicking Sign Up, you agree to our <a href="##">Terms</a>, <a href="##">Privacy</a> Policy and <a href="##">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+                            <input type="submit" id="btn-submit" class="btn btn-success m-auto ps-5 pe-5 fw-bold" value="Sign Up">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        /*
+        $(document).ready(function(){
+    
+
+            // validation for Sign Up Page
+            // Get values
+            let firstName = $('.inp-value [name="First name"]');
+            let surName = $('.inp-value [name="Surname"]');
+            let email = $('.inp-value [name="email"]');
+            let password = $('.inp-value [name="password"]');
+            let birthDay= $('.birth-info [name="birth-day"]');
+            let birthMonth = $('.birth-info [name="birth-month"]');
+            let birthYear = $('.birth-info [name="birth-year"]');
+            let gender = $('.gender-info [name="Gender"]');
+
+            let fullName = firstName.val() + " " + surName.val();
+
+            // Validation and localstorage
+            let firstNameRegEx = /^[a-zA-Z0-9_-]{3,16}$/;
+            let surNameRegEx = /^[a-zA-Z0-9_-]{3,16}$/;
+            let passwordRegEx = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,16}$/;
+            let emailRegEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})$/;
+
+            // validation
+            firstName.on('change blur',function(){
+                if (firstNameRegEx.test(firstName.val())) {
+                    firstName.addClass('is-valid')
+                    firstName.removeClass('is-invalid')
+                }else{
+                    firstName.removeClass('is-valid')
+                    firstName.addClass('is-invalid')
+                }
+            })
+ 
+            surName.on('change blur',function(){
+                if (surNameRegEx.test(surName.val())) {
+                    surName.addClass('is-valid')
+                    surName.removeClass('is-invalid')
+                }else{
+                    surName.removeClass('is-valid')
+                    surName.addClass('is-invalid')
+                }
+            })
+
+            email.on('change blur',function(){
+                if (emailRegEx.test(email.val())) {
+                    email.addClass('is-valid')
+                    email.removeClass('is-invalid')
+                }else{
+                    email.removeClass('is-valid')
+                    email.addClass('is-invalid')
+                }
+            })
+
+            password.on('change blur',function(){
+                if (passwordRegEx.test(password.val())) {
+                    password.addClass('is-valid')
+                    password.removeClass('is-invalid')
+                }else{
+                    password.removeClass('is-valid')
+                    password.addClass('is-invalid')
+                }
+            })
+
+            if (birthDay.val() !== "") {
+                birthDay.addClass('is-valid')
+                birthDay.removeClass('is-invalid')
+            }else{
+                birthDay.removeClass('is-valid')
+                birthDay.addClass('is-invalid')
+            }
+            if (birthMonth.val() !== "") {
+                birthMonth.addClass('is-valid')
+                birthMonth.removeClass('is-invalid')
+            }else{
+                birthMonth.removeClass('is-valid')
+                birthMonth.addClass('is-invalid')
+            }
+            if (birthYear.val() !== "") {
+                birthYear.addClass('is-valid')
+                birthYear.removeClass('is-invalid')
+            }else{
+                birthYear.removeClass('is-valid')
+                birthYear.addClass('is-invalid')
+            }
+
+            if (gender.attr('checked')) {
+                gender.addClass('is-valid')
+                gender.removeClass('is-invalid')
+            }else{
+                gender.removeClass('is-valid')
+                gender.addClass('is-invalid')
+            }
+            // Localstorage
+            $("#myForm").on('submit',function(event){
+                window.localStorage.clear();
+                if(firstNameRegEx.test(firstName.val()) && surNameRegEx.test(surName.val()) && passwordRegEx.test(password.val()) && emailRegEx.test(email.val()) && birthDay.val() !== "" && birthMonth.val() !== "" && birthYear.val() !== ""){
+
+                    window.localStorage.setItem(firstName.attr('name'),firstName.val());
+                    window.localStorage.setItem(surName.attr('name'),surName.val());
+                    window.localStorage.setItem(password.attr('name'),password.val());
+                    window.localStorage.setItem(email.attr('name'),email.val());
+                    window.localStorage.setItem(birthDay.attr('name'),birthDay.val());
+                    window.localStorage.setItem(birthMonth.attr('name'),birthMonth.val());
+                    window.localStorage.setItem(birthYear.attr('name'),birthYear.val());
+                    window.localStorage.setItem(gender.attr('name'),gender.val());
+
+                }else{
+                    event.preventDefault();
+                }
+
+                // if (firstNameRegEx.test(firstName.val())) {
+                //     window.localStorage.setItem(firstName.attr('name'),firstName.val())
+                //     firstName.addClass('is-valid')
+                //     firstName.removeClass('is-invalid')
+                // }else{
+                //     event.preventDefault();
+                //     firstName.removeClass('is-valid')
+                //     firstName.addClass('is-invalid')
+                // }
+                
+            })
+
+
+
+            // Validation for Login Page
+            let loginForm = $('#login-form');
+            let btnLogin = $('.log-in [type="submit"]');
+            let loginEmail = $('.log-in .login-email-inp');
+            let loginPass = $('.log-in .login-pass-inp');
+
+            loginEmail.on('change blur',function(){
+                if (loginEmail.val() == localStorage.getItem(email.attr('name'))) {
+                    loginEmail.addClass('is-valid');
+                    loginEmail.removeClass('is-invalid');
+                }else{
+                    loginEmail.removeClass('is-valid');
+                    loginEmail.addClass('is-invalid');
+                }
+            })
+
+            loginPass.on('change blur',function(){
+                if (loginPass.val() == localStorage.getItem(password.attr('name'))) {
+                    loginPass.addClass('is-valid');
+                    loginPass.removeClass('is-invalid');
+                }else{
+                    loginPass.removeClass('is-valid');
+                    loginPass.addClass('is-invalid');
+                }
+            })
+
+            loginForm.on('submit',function(event){
+                if ((loginEmail.val() == localStorage.getItem(email.attr('name'))) && (loginPass.val() == localStorage.getItem(password.attr('name'))) ) {
+                    window.open('home.html');
+                }else{
+                    event.preventDefault();
+                }
+            })
+        })
+            */
+    </script>
+    
+    <script src="../js/login.js"></script>
+    <!-- jquery file -->
+    <script type="text/javascript" src="../refrence/JQuery/jquery-3.1.1.js"></script>
+</body>
+
+</html>

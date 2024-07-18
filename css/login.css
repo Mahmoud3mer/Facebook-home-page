@@ -1,0 +1,55 @@
+
+.content{
+    height: 100vh;
+    background-color: #D3D1CD;
+    padding: 92px 0 132px;
+}
+
+.login-signup{
+    width: 396px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px  #c5c5c5,-3px -3px 4px  #c5c5c5;
+}
+.login-signup .log-in input{
+    width: 100%;
+    border: 1px solid #c7c7c7e1;
+    padding: 14px 16px;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #ecececa1;
+}
+.login-signup .log-in input:focus{
+    outline: blue 1px solid;
+}
+.login-signup .log-in a{
+    text-decoration: none;
+}
+.login-signup .log-in a:hover{
+    text-decoration: underline;
+}
+
+
+.fb-info{
+    width: 584px;
+}
+
+.footer-info a{
+    color: black;
+    text-decoration: none;
+}
+.footer-info a:hover{
+    text-decoration: underline;
+}
+
+.Male-gender,.Female-gender{
+    border: 1px solid #c7c7c7e1;
+    padding: 0 28px 0 10px;
+    border-radius: 5px;
+}
+
+.modal-footer p{
+    font-size: 11px;
+}
+

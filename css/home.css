@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: #dcdad7;
+    height: 100vh;
+} */
+
+header {
+    z-index: 10000;
+}
+
+nav {
+    height: 56px;
+    box-shadow: 0 2px 4px rgba(222, 222, 222, 0.7);
+}
+
+nav .fb-search {
+    width: 240px;
+    height: 40px;
+    background-color: rgb(222, 222, 222);
+    font-size: 15px;
+}
+
+nav .fb-search input {
+    background-color: rgb(222, 222, 222);
+    outline: none;
+}
+
+.mid-header i {
+    font-size: 20px;
+    color: rgb(174, 174, 174);
+    opacity: 1;
+}
+
+.mid-header div {
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.mid-header div:hover {
+    background-color: rgba(222, 222, 222, 0.5);
+}
+
+.mid-header div.activPage i {
+    position: relative;
+    color: #0000fdde;
+}
+
+.mid-header div.activPage::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #0000fdde;
+    bottom: -10%;
+    left: 0;
+}
+
+
+.right-header .menue-icon,
+.right-header .mess-icon,
+.right-header .notif-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(222, 222, 222, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-header .menue-icon:hover,
+.right-header .mess-icon:hover,
+.right-header .notif-icon:hover {
+    background-color: rgba(222, 222, 222, 0.3);
+}
+
+.right-header i {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.right-header .mess-icon {
+    position: relative;
+}
+
+.right-header .mess-icon .num-mess {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -8px;
+    right: -9px;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #c00000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.left-side {
+    height: 100vh;
+    overflow: auto;
+}
+
+.left-side ul {
+    list-style: none;
+}
+
+.left-side ul li {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.left-side ul li:hover {
+    background-color: rgba(222, 222, 222, 0.5);
+    border-radius: 5px;
+}
+
+/* .midd-side{
+    background-color: #e7e7e7;
+} */
+
+.right-side {
+    right: 0;
+    bottom: 0;
+    top: 70px;
+    overflow: auto;
+}
+.Allcontacts div{
+    cursor: pointer;
+}
+.inp-value,
+.post-content {
+    box-shadow: 0 2px 5px rgba(205, 205, 205, 0.7);
+    background-color: #e4e4e478;
+    color: #626A6E;
+}
+
+.post-content i{
+    cursor: pointer;
+}
+
+.inp-value input {
+    background-color: rgb(222, 222, 222);
+}
+
+.inp-value input:hover {
+    background-color: rgba(222, 222, 222, 0.5);
+    cursor: pointer;
+}
+
+.inp-value input:focus {
+    background-color: rgb(222, 222, 222);
+    outline: none !important;
+}
+
+.media-value div {
+    width: 33%;
+    padding: 0 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.media-value div:hover {
+    background-color: rgba(222, 222, 222, 0.5);
+}
+
+.media-value span {
+    font-size: 15px;
+}
+
+.post-icons .like,
+.post-icons .comment,
+.post-icons .send,
+.post-icons .share {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.post-icons .like:hover,
+.post-icons .comment:hover,
+.post-icons .send:hover,
+.post-icons .share:hover {
+    background-color: rgba(222, 222, 222, 0.5);
+    border-radius: 5px;
+}
+
+.post-icons i {
+    font-size: 20px;
+    color: #8d8d8dda;
+}
+
+
+/*! Pagination bar */
+.Pagination-bar {
+    padding: 10px;
+    box-shadow: 2px 2px 5px #848484b3 ,-2px -2px 5px #848484b3;
+    background-color: #e4e4e4b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pagination-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.Pagination-bar span,
+.Pagination-bar ul li {
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 5px;
+    /* margin: 5px; */
+    color: #1900ff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Pagination-bar span:hover,
+.Pagination-bar ul li:hover {
+    color:#fff;
+    background-color: #1900ff;
+}
+
+
+.Pagination-bar ul li.active {
+    color:#fff;
+    background-color: #1900ff;
+}
+
+.Posts.show-post{
+    display: block;
+}
+.Posts.hide-post{
+    display: none;
+}
+
+.Pagination-bar span.disabled{
+    background-color: #f1f1f180;
+    cursor: no-drop;
+}
